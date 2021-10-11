@@ -2,13 +2,12 @@ import { NgModule } from '@angular/core'
 import { Routes } from '@angular/router'
 import { NativeScriptRouterModule } from '@nativescript/angular'
 
-import { ItemsComponent } from './item/items.component'
-import { ItemDetailComponent } from './item/item-detail.component'
+import { FirstTabComponent } from './first-tab/first-tab.component';
+import { ThirdTabComponent } from './third-tab/third-tab.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/items', pathMatch: 'full' },
-  { path: 'items', component: ItemsComponent },
-  { path: 'item/:id', component: ItemDetailComponent },
+  { path: 'first-tab', component: FirstTabComponent },
+  { path: 'third-tab', component: ThirdTabComponent },
 ]
 
 @NgModule({
